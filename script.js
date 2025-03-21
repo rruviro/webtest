@@ -12,7 +12,7 @@ function searchAndPlay() {
         return;
     }
 
-    fetch(`http://127.0.0.1:5000/search?track=${encodeURIComponent(trackName)}`)
+    fetch(`https://on-tune-q9xy66588-louises-projects-6562a80e.vercel.app/search?track=${encodeURIComponent(trackName)}`)
         .then(response => response.json())
         .then(data => {
             if (data.error) {
